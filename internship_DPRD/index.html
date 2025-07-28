@@ -14,29 +14,34 @@
 </head>
 <body>
 <!-- Header Section -->
-    <header class="header">
+<header class="header">
+    <div class="logo-container">
         <img src="logo.jpeg" alt="logo-img">
-        <a href="#home" class="logo">KEPUASAN<span></span></a>
-    
+        <a href="#home" class="logo"><span>KEPUASAN</span></a>
+    </div>
 
-        <div id="menu-icon" class="menu-icon">
-            <i class="fas fa-bars"></i>
-        </div>
+    <!-- Checkbox for toggle -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" id="menu-icon" class="menu-icon">
+        <i class="fas fa-bars"></i>
+    </label>
 
-        <nav class="navbar">
-            <a href="#beranda" class="active">Beranda</a>
-            <a href="#tentang">Tentang</a>
-            <a href="#kegiatan">Kegiatan</a>
-            <a href="#keunggulan">Keunggulan</a>
-            <a href="#login" class="btn login-btn">Login</a>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kegiatan">Kegiatan</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#login" class="btn login-btn">Login</a>
+    </nav>
+</header>
 
 <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-img">
             <img src="hero.jpeg" alt="Hero Image">
         </div>
+        
         <div class="hero-text">
             <h1>Selamat Datang di Sistem Index Kepuasan Sekreariat DPRD DKI Jakarta</h1>
             <p>Platform untuk mengukur kepuasan terhadap DPRD adalah evaluasi terhadap kinerja anggota DPRD, seperti partisipasi dalam pembahasan kebijakan, kehadiran dalam rapat, dan tingkat keberhasilan dalam menghasilkan peraturan daerah yang relevan dan efektif.</p>
@@ -72,30 +77,31 @@
 
 <!-- About Section -->
     <section class="about" id="tentang">
-        <div class="about-text">
-            <h1>Tentang</h1>
-            <p>Kepuasan tingkat dewan adalah ukuran yang digunakan untuk mengevaluasi sejauh mana anggota dewan merasa puas dengan kinerja dewan dan proses pengambilan keputusan. 
-            Ini adalah aspek penting dari evaluasi kinerja dewan karena kepuasan anggota dewan dapat mempengaruhi produktivitas, efektivitas, dan kualitas keputusan yang dihasilkan oleh dewan.</p>
+        <div class="about-container">
 
-            <h2>Kualitas Diskusi</h2>
-            <p>Anggota dewan mungkin merasa puas jika mereka merasa diskusi di dalam dewan adalah produktif,
-            terbuka, dan berfokus pada masalah yang relevan.
-            </p>
+            <div class="about-img">
+                <img src="tentang.jpeg" alt="Tentang Kepuasan DPRD">
+            </div>
 
-            <h2>Kualitas Keputusan</h2>
-            <p>Anggota dewan mungkin merasa puas jika mereka merasa bahwa keputusan yang diambil oleh dewan adalah tepat,
-            berdasarkan informasi yang akurat, dan memperhitungkan berbagai perspektif.
-            </p>
-
-            <h2>Kualitas Proses Pengambilan Keputusan</h2>
-            <p>Anggota dewan mungkin merasa puas jika mereka merasa bahwa proses 
-            pengambilan keputusan di dalam dewan adalah transparan, adil, 
-            dan memberikan kesempatan bagi semua anggota dewan untuk berpartisipasi.
-            </p>
-        </div>
-
-        <div class="about">
-            <img src="tentang.jpeg" alt="Hero Image">
+            <div class="about-text">
+                <h1>Tentang</h1>
+                <p>Kepuasan tingkat dewan adalah ukuran yang digunakan untuk mengevaluasi sejauh mana anggota dewan merasa puas dengan kinerja dewan dan proses pengambilan keputusan. Ini adalah aspek penting dari evaluasi kinerja dewan karena kepuasan anggota dewan dapat mempengaruhi produktivitas, efektivitas, dan kualitas keputusan yang dihasilkan oleh dewan.</p>
+                
+                <div class="quality-item">
+                    <h2><i class="fas fa-comments"></i>Kualitas Diskusi</h2>
+                    <p>Anggota dewan mungkin merasa puas jika mereka merasa diskusi di dalam dewan adalah produktif, terbuka, dan berfokus pada masalah yang relevan.</p>
+                </div>
+                
+                <div class="quality-item">
+                    <h2><i class="fa-solid fa-check"></i>Kualitas Keputusan</h2>
+                    <p>Anggota dewan mungkin merasa puas jika mereka merasa bahwa keputusan yang diambil oleh dewan adalah tepat, berdasarkan informasi yang akurat, dan memperhitungkan berbagai perspektif.</p>
+                </div>
+                
+                <div class="quality-item">
+                    <h2><i class="fa-solid fa-award"></i>Kualitas Proses Pengambilan Keputusan</h2>
+                    <p>Anggota dewan mungkin merasa puas jika mereka merasa bahwa proses pengambilan keputusan di dalam dewan adalah transparan, adil, dan memberikan kesempatan bagi semua anggota dewan untuk berpartisipasi.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -103,70 +109,124 @@
     <section class="activities" id="kegiatan">
         <h1>Kegiatan</h1>
         <div class="activity-container">
-            <div class="activity-1">
-                <img src="images/activity1.jpg" alt="Activity 1">
-                <h3>Survei Kepuasan</h3>
-                <p>Survei ini biasanya dilakukan secara berkala untuk mengukur
-                kepuasan anggota dewan terhadap kinerja dewan dan proses pengambilan keputusan.</p>
+            <div class="activity-card">
+                <!-- Activity 1 -->
+                <img src="survei.jpeg" alt="Survei Kepuasan" class="card-image">
+                <div class="card-content">
+                    <h3>Survei Kepuasan</h3>
+                    <p>Survei ini biasanya dilakukan secara berkala untuk mengukur kepuasan anggota dewan terhadap kinerja dewan dan proses pengambilan keputusan.</p>
+                </div>
             </div>
-            <div class="activity-2">
-                <h3>Wawancara</h3>
-                <p>Wawancara dengan anggota dewan dapat memberikan wawasan yang lebih mendalam tentang kepuasan mereka.
-                Wawancara ini dapat dilakukan secara individu atau dalam kelompok kecil.</p>
+
+            <!-- Activity 2 -->
+            <div class="activity-card">
+                <img src="wawancara.jpeg" alt="Wawancara" class="card-image">
+                <div class="card-content">
+                    <h3>Wawancara</h3>
+                    <p>Wawancara dengan anggota dewan dapat memberikan wawasan yang lebih mendalam tentang kepuasan mereka. Wawancara ini dapat dilakukan secara individu atau dalam kelompok kecil.</p>
+                </div>
             </div>
-            <div class="activity-3">
-                <img src="images/activity3.jpg" alt="Activity 3">
-                <h3>Diskusi Kelompok</h3>
-                <p>Diskusi kelompok dengan anggota dewan dapat dilakukan untuk mendapatkan
-                umpan balik langsung tentang kepuasan mereka terhadap kinerja dewan dan proses pengambilan keputusan.
-                </p>
+
+            <!-- Activity 3 -->
+            <div class="activity-card">
+                <img src="diskusi.jpeg" alt="Diskusi Kelompok" class="card-image">
+                <div class="card-content">
+                    <h3>Diskusi Kelompok</h3>
+                    <p>Diskusi kelompok dengan anggota dewan dapat dilakukan untuk mendapatkan umpan balik langsung tentang kepuasan mereka terhadap kinerja dewan dan proses pengambilan keputusan.</p>
+                </div>
             </div>
-            <div class="activity-4">
-                <img src="images/activity4.jpg" alt="Activity 3">
-                <h3>Analisis Data</h3>
-                <p>Data dari survei, wawancara, dan diskusi kelompok dapat dianalisis untuk mengidentifikasi tren,
-                masalah, dan area perbaikan dalam kinerja dewan.
-                </p>
+
+            <!-- Activity 4 -->
+            <div class="activity-card">
+                <img src="analisis.jpeg" alt="Analisis Data" class="card-image">
+                <div class="card-content">
+                    <h3>Analisis Data</h3>
+                    <p>Data dari survei, wawancara, dan diskusi kelompok dapat dianalisis untuk mengidentifikasi tren, masalah, dan area perbaikan dalam kinerja dewan.</p>
+                </div>
             </div>
-            <div class="activity-5"></div>
-                <img src="images/activity5.jpg" alt="Activity 3">
-                <h3>Pelaporan</h3>
-                <p>Hasil dari survei, wawancara, atau diskusi kelompok dapat dilaporkan kepada dewan
-                dalam bentuk grafik, tabel, dan narasi yang menjelaskan temuan dan rekomendai.
-                </p>
+
+            <!-- Activity 5 -->
+            <div class="activity-card">
+                <img src="pelaporan.jpeg" alt="Pelaporan" class="card-image">
+                <div class="card-content">
+                    <h3>Pelaporan</h3>
+                    <p>Hasil dari survei, wawancara, atau diskusi kelompok dapat dilaporkan kepada dewan dalam bentuk grafik, tabel, dan narasi yang menjelaskan temuan dan rekomendasi.</p>
+                </div>
             </div>
-            <div class="activity-6"></div>
-                <img src="images/activity6.jpg" alt="Activity 3">
-                <h3>Kinerja Keseluruhan</h3>
-                <p>Anggota dewan mungkin merasa puas jika mereka merasa bahwa dewan secara keseluruhan
-                mencapai tujuan organisasi dan memberikan nilai tambah bagi organisasi.
-                </p>
+
+            <!-- Activity 6 -->
+            <div class="activity-card">
+                <img src="kinerja.jpeg" alt="Kinerja Keseluruhan" class="card-image">
+                <div class="card-content">
+                    <h3>Kinerja Keseluruhan</h3>
+                    <p>Anggota dewan mungkin merasa puas jika mereka merasa bahwa dewan secara keseluruhan mencapai tujuan organisasi dan memberikan nilai tambah bagi organisasi.</p>
+                </div>
             </div>
+    </section>
+
 <!-- Keunggulan Section -->
-    <section class="advantage" id="keunggulan">
-        <h2>Keunggulan</h2>
-        <h3>Meningkatkan Kerja</h3>
-        <h3>Meningkatkan Produktivitas</h3>
-        <h3>Meningkatkan Kualitas Keputusan</h3>
-        <h3>Meningkatkan Kepuasan Anggota</h3>
-        <h3>Meningkatkan Kepuasan Stakeholder</h3>
+    <section class="keunggulan" id="keunggulan">
+        <h1>Keunggulan</h1>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first" checked>
+                <label for="first">Meningkatkan Kinerja</label>
+                <div class="content">
+                    <p>Kepuasan anggota dewan dapat meningkatkan kinerja dewan secara keseluruhan. 
+                    Anggota dewan yang merasa puas dengan kinerja dewan dan proses pengambilan keputusan mungkin 
+                    lebih termotivasi untuk berpartisipasi aktif dalam diskusi dan membuat keputusan yang tepat.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">Meningkatkan Produktivitas</label>
+                <div class="content">
+                    <p>Kepuasan anggota dewan dapat meningkatkan produktivitas dewan secara keseluruhan. 
+                    Anggota dewan yang merasa puas dengan kinerja dewan dan proses pengambilan keputusan mungkin 
+                    lebih termotivasi untuk berpartisipasi aktif dalam diskusi dan membuat keputusan yang tepat.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">Meningkatkan Kualitas Keputusan</label>
+                <div class="content">
+                    <p>Kepuasan anggota dewan dapat meningkatkan kualitas keputusan dewan secara keseluruhan. 
+                    Anggota dewan yang merasa puas dengan kinerja dewan dan proses pengambilan keputusan mungkin 
+                    lebih termotivasi untuk berpartisipasi aktif dalam diskusi dan membuat keputusan yang tepat.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fourth">
+                <label for="fourth">Meningkatkan Kepuasan Anggota</label>
+                <div class="content">
+                    <p>Kepuasan anggota dewan dapat meningkatkan kepuasan dewan secara keseluruhan. 
+                    Anggota dewan yang merasa puas dengan kinerja dewan dan proses pengambilan keputusan mungkin 
+                    lebih termotivasi untuk berpartisipasi aktif dalam diskusi dan membuat keputusan yang tepat.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fifth">
+                <label for="fifth">Meningkatkan Kepuasan Stakeholder</label>
+                <div class="content">
+                    <p>Kepuasan anggota dewan dapat meningkatkan kepuasan stakeholder secara keseluruhan. 
+                    Anggota dewan yang merasa puas dengan kinerja dewan dan proses pengambilan keputusan mungkin 
+                    lebih termotivasi untuk berpartisipasi aktif dalam diskusi dan membuat keputusan yang tepat.</p>
+                </div>
+            </li>
+        </ul>
     </section>
 
 <!-- Footer Section -->
-    <footer class="footer">
+    <section class="footer" id="footer">
         <div class="social">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>  
-            <a href="#"><i class="fab fa-github"></i></a>      
             <a href="#"><i class="fab fa-twitter"></i></a>       
-            <a href="#"><i class="fab fa-instagram"></i></a>  
+            <a href="#"><i class="fab fa-instagram"></i></a> 
+            <a href="#"><i class="fab fa-whatsapp"></i></a>  
         </div>
 
         <ul class="list">
             <li>
                 <a href="#">FAQ</a>
-            </li>
-            <li>
-                <a href="#">About Me</a>
             </li>
             <li>
                 <a href="#">Contact</a>
@@ -178,6 +238,6 @@
         <p class="copyright">
             © DPRD DKI Jakarta | All Right Reserved
         </p>
-        </footer>
+    </section>
 </body>
 </html>
